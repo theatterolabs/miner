@@ -40,7 +40,7 @@ const scriptsInEvents = {
 		    .then(response => {
 		      if (!response.ok) {
 		        throw new Error(`HTTP error! status: ${response.status}`);
-		      }
+		      } else { console.log(data); }
 		      return response.json();
 		    })
 		    .then(data => {
